@@ -1,179 +1,539 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Coderthemes">
 
     <!-- Favicon icon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut png" href="images/logo.png">
 
     <!-- Site Title -->
-    <title>Starto - Responsive Admin Dashboard</title>
+    <title>Out Of Axis</title>
 
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Animate -->
     <link href="css/animate.css" rel="stylesheet">
-    
     <!-- Icon-font -->
     <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
-
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-
     <!-- Color css -->
-    <link href="css/colors/default.css" rel="stylesheet">
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
 
-    <link href="css/demo.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-74366260-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-  </head>
-
-<body>
-
-   <!-- Topbar -->
-  <div class="section bg-gray footer footer-sm">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="text-center">
-            <a class="navbar-brand logo" href="index.html">
-              <i class="zmdi zmdi-navigation"></i> <span class="text-uppercase">starto</span>
-            </a>
-
-          </div>
+<body data-spy="scroll" data-target="#navbar-menu" class="layout-dark">
+    <div class="navbar navbar-custom sticky" role="navigation">
+        <div class="container">
+            <!-- Navbar-header -->
+            <div class="navbar-header">
+                <!-- Responsive menu button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="zmdi zmdi-menu"></i>
+                </button>
+                <!-- LOGO -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- end navbar-header -->
+            <!-- menu -->
+            <div class="navbar-collapse collapse" id="navbar-menu">
+                <!-- Navbar left -->
+                <ul class="nav navbar-nav nav-custom-left">
+                    <li class="active">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#technology">Technology</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+                    <!-- <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </div>
+            <!--/Menu -->
         </div>
-      </div>
-      <!-- end row -->
-
+        <!-- end container -->
     </div>
-  </div>
-
-  <!-- END Topbar -->
-
-  <div class="demo-page text-center">
-    <h4 class="">Layout 1</h4>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 m-b-t-25">
-          <a href="index_dark.html" target="_blank" class="demo-item">
-            <img src="images/demo/1.png" class="img-responsive img-thumbnail">
-          </a>
+    <!-- End navbar-custom -->
+    <!-- HOME -->
+    <section class="home" id="home">
+        <!-- <div class="bg-overlay"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="home-wrapper text-center">
+                        <h2 class="animated fadeInDown wow" data-wow-delay=".1s">About <span class="text-colored">Us</span></h2>
+                        <p class="animated fadeInDown wow text-muted" data-wow-delay=".2s">
+                            We've worked on a variety of different projects. Having broad perspective on how to build Scala projects we can help you decide which technologies and frameworks to choose and how to design your system.
+                        </p>
+                        <a href="#features" class="btn btn-primary btn-shadow btn-rounded w-lg animated fadeInDown wow" data-wow-delay=".4s">Get Started</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- home wrapper -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
         </div>
+        <!-- end container -->
+    </section>
+    <!-- END HOME -->
 
-        <div class="col-md-4 col-sm-6 m-b-t-25">
-          <a href="index_flat.html" target="_blank" class="demo-item">
-            <img src="images/demo/2.png" class="img-responsive img-thumbnail">
-          </a>
+    <!-- FEATURES -->
+    <section class="section" id="technology">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="title-box">
+                        <p class="title-alt">Technology</p>
+                        <h3 class="fadeIn animated wow text-white" data-wow-delay=".1s">We use this technplogies</h3>
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="service-item animated fadeInLeft wow" data-wow-delay=".1s">
+                        <img src="images/icons/scala-4.svg" alt="img">
+                        <div class="service-detail">
+                            <h4 class="text-light">Scala</h4>
+                            <p>Have the best of both worlds. Construct elegant class hierarchies for maximum code reuse and extensibility, implement their behavior using higher-order functions. Or anything in-between.</p>
+                        </div>
+                        <!-- /service-detail -->
+                    </div>
+                    <!-- /service-item -->
+                </div>
+                <!-- /col -->
+
+                <div class="col-sm-4">
+                    <div class="service-item animated fadeInDown wow" data-wow-delay=".3s">
+                        <img src="images/icons/akka.png" alt="img">
+                        <div class="service-detail">
+                            <h4 class="text-light">Akka</h4>
+                            <p>Akka is a toolkit and runtime for building highly concurrent, distributed, and resilient message-driven applications on the JVM.</p>
+                        </div>
+                        <!-- /service-detail -->
+                    </div>
+                    <!-- /service-item -->
+                </div>
+                <!-- /col -->
+
+                <div class="col-sm-4">
+                    <div class="service-item animated fadeInRight wow" data-wow-delay=".5s">
+                        <img src="images/icons/couchbase.svg" width="" alt="img">
+                        <div class="service-detail">
+                            <h4 class="text-light">Couchbase</h4>
+                            <p>A document database featuring a powerful query language and unrivaled performance at scale.</p>
+                        </div>
+                        <!-- /service-detail -->
+                    </div>
+                    <!-- /service-item -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!--end row -->
+
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="service-item animated fadeInLeft wow" data-wow-delay=".1s">
+                        <img src="images/icons/js.png" width="48" alt="img">
+                        <div class="service-detail">
+                            <h4 class="text-light">Javascript</h4>
+                            <p>The most popular programming language in the world.</p>
+                        </div>
+                        <!-- /service-detail -->
+                    </div>
+                    <!-- /service-item -->
+                </div>
+                <!-- /col -->
+
+                <div class="col-sm-4">
+                    <div class="service-item animated fadeInDown wow" data-wow-delay=".3s">
+                        <img src="images/icons/react.svg" width="48" alt="img">
+                        <div class="service-detail">
+                            <h4 class="text-light">React</h4>
+                            <p>Lots of people use React as the V in MVC. Since React makes no assumptions about the rest of your technology stack, it's easy to try it out on a small feature in an existing project.</p>
+                        </div>
+                        <!-- /service-detail -->
+                    </div>
+                    <!-- /service-item -->
+                </div>
+                <!-- /col -->
+
+                <div class="col-sm-4">
+                    <div class="service-item animated fadeInRight wow" data-wow-delay=".5s">
+                        <img src="images/icons/Boostrap_logo.svg.png" width="48" alt="img">
+                        <div class="service-detail">
+                            <h4 class="text-light">Bootstrap</h4>
+                            <p>The most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+                        </div>
+                        <!-- /service-detail -->
+                    </div>
+                    <!-- /service-item -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!--end row -->
         </div>
+        <!-- end container -->
+    </section>
+    <!-- END FEATURES -->
 
-        <div class="col-md-4 col-sm-6 m-b-t-25">
-          <a href="index_img.html" target="_blank" class="demo-item">
-            <img src="images/demo/3.png" class="img-responsive img-thumbnail">
-          </a>
+
+    <!-- FEATURES-ALT -->
+    <section class="section bg-gray" id="features">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="feature-detail">
+
+                        <div class="title-box">
+                            <p class="title-alt">Features</p>
+                            <h3 class="fadeIn animated wow" data-wow-delay=".1s">Clean and Ultra Modern Design</h3>
+                            <div class="border"></div>
+                        </div>
+
+                        <ul class="zmdi-hc-ul">
+                            <li class="fadeIn animated wow" data-wow-delay=".1s"><i class="zmdi-hc-li zmdi zmdi-caret-right-circle text-colored"></i><span class="text-muted">Fully Responsive design.</span></li>
+
+                            <li class="fadeIn animated wow" data-wow-delay=".2s"><i class="zmdi-hc-li zmdi zmdi-caret-right-circle text-colored"></i><span class="text-muted">Based on Bootstrap 3.3.6</span></li>
+
+                            <li class="fadeIn animated wow" data-wow-delay=".3s"><i class="zmdi-hc-li zmdi zmdi-caret-right-circle text-colored"></i><span class="text-muted">Many variants to choose from</span></li>
+
+                            <li class="fadeIn animated wow" data-wow-delay=".4s"><i class="zmdi-hc-li zmdi zmdi-caret-right-circle text-colored"></i><span class="text-muted">Built with HTML5 & CSS3</span></li>
+
+                            <li class="fadeIn animated wow" data-wow-delay=".5s"><i class="zmdi-hc-li zmdi zmdi-caret-right-circle text-colored"></i><span class="text-muted">Commented and clean code</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/macbook.png" class="img-responsive fadeIn animated wow" data-wow-delay=".2s">
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- END FEATURES-ALT -->
 
-        <div class="col-md-4 col-sm-6 col-md-offset-4">
-          <div class=" m-b-t-25">
-          <a href="index_gradient.html" target="_blank" class="demo-item">
-            <img src="images/demo/4.png" class="img-responsive img-thumbnail">
-          </a>
+    <!-- PRICING -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="title-box">
+                        <p class="title-alt fadeIn animated wow" data-wow-delay=".1s">Services</p>
+                        <h3 class="fadeIn animated wow text-white" data-wow-delay=".2s">Select a Plan</h3>
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+
+                <!--Pricing Column-->
+                <article class="pricing-column pricing-dark col-lg-3 col-sm-6">
+                    <div class="inner-box fadeIn animated wow" data-wow-delay=".1s">
+                        <div class="plan-header text-center">
+                            <h3 class="plan-title">Software and Innovation</h3>
+                        </div>
+                        <ul class="plan-stats list-unstyled text-center">
+                            <li>Using the very latest technologies, Cake Solutions partners with and helps our Clients take disruptive ideas and develop them into reactive software solutions.</li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-shadow w-md btn-rounded">Buy Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Pricing Column-->
+                <article class="pricing-column pricing-dark col-lg-3 col-sm-6">
+                    <div class="inner-box fadeIn animated wow" data-wow-delay=".2s">
+                        <div class="plan-header text-center">
+                            <h3 class="plan-title">Technology</h3>
+                        </div>
+                        <ul class="plan-stats list-unstyled text-center">
+                            <li>Extensive experience in designing, building and implementing high-performance applications that are responsive, resilient, elastic and message-driven.</li>
+                        </ul>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-shadow w-md btn-rounded">Buy Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Pricing Column-->
+                <article class="pricing-column pricing-dark col-lg-3 col-sm-6">
+                    <div class="inner-box fadeIn animated wow" data-wow-delay=".3s">
+                        <div class="plan-header text-center">
+                            <h3 class="plan-title">Invest</h3>
+                        </div>
+                        <ul class="plan-stats list-unstyled text-center">
+                            <li>Collaborating with promising individuals and companies, Cake Invest provides cutting edge tech whilst keeping startup costs low, focussing on long-term success to realise potential.</li>
+                        </ul>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-shadow w-md btn-rounded">Buy Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Pricing Column-->
+                <article class="pricing-column pricing-dark col-lg-3 col-sm-6">
+                    <div class="inner-box fadeIn animated wow" data-wow-delay=".4s">
+                        <div class="plan-header text-center">
+                            <h3 class="plan-title">About</h3>
+                        </div>
+                        <ul class="plan-stats list-unstyled text-center">
+                            <li>The team continualy research, innovate and share thought leading insight. Our blogs and conference talks are enjoyed by thousands of people every month, follow the menu above and have a look for youself.</li>
+                        </ul>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-shadow w-md btn-rounded">Buy Now</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <!-- end row -->
+
         </div>
+        <!-- end container -->
+    </section>
+    <!-- END PRICING -->
+
+    <!-- CLIENTS -->
+    <section>
+        <div class="container clients clients-dark section">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="title-box">
+                        <p class="title-alt">Testimonials</p>
+                        <h3 class="fadeIn animated wow text-white" data-wow-delay=".1s">Happy Clients</h3>
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <div class="">
+                        <div class="brand-item animated fadeInLeft wow" data-wow-delay=".1s">
+                            <a href="#"><img alt="01 brand" src="images/clients/01_brand.png"></a>
+                        </div>
+                        <div class="brand-item animated fadeInLeft wow" data-wow-delay=".2s">
+                            <a href="#"><img alt="02 brand" src="images/clients/02_brand.png"></a>
+                        </div>
+                        <div class="brand-item animated fadeInLeft wow" data-wow-delay=".3s">
+                            <a href="#"><img alt="03 brand" src="images/clients/03_brand.png"></a>
+                        </div>
+                        <div class="brand-item animated fadeInLeft wow" data-wow-delay=".4s">
+                            <a href="#"><img alt="04 brand" src="images/clients/04_brand.png"></a>
+                        </div>
+                        <div class="brand-item animated fadeInLeft wow" data-wow-delay=".5s">
+                            <a href="#"><img alt="05 brand" src="images/clients/05_brand.png"></a>
+                        </div>
+                        <div class="brand-item animated fadeInLeft wow" data-wow-delay=".6s">
+                            <a href="#"><img alt="06 brand" src="images/clients/06_brand.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- END CLIENTS -->
 
-      </div>
+    <!-- TEAM -->
+    <section class="section bg-gray" id="team">
+        <div class="container">
 
-      </div>
-    </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="title-box">
+                        <p class="title-alt">Team</p>
+                        <h3 class="fadeIn animated wow" data-wow-delay=".1s">Creative People</h3>
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
 
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row team text-center">
+                        <!-- team-member -->
+                        <div class="col-sm-4">
+                            <div class="team-member animated fadeInDown wow" data-wow-delay=".1s">
+                                <img src="images/team/team-1.jpg" alt="team-member" class="img-responsive img-circle">
+                                <h4>Holden McGroin</h4>
+                                <p class="text-muted">Product Designer & Founder</p>
+                            </div>
+                        </div>
 
+                        <!-- team-member -->
+                        <div class="col-sm-4">
+                            <div class="team-member animated fadeInDown wow" data-wow-delay=".3s">
+                                <img src="images/team/team-2.jpg" alt="team-member" class="img-responsive img-circle">
+                                <h4>Mike Oxbigg</h4>
+                                <p class="text-muted">Developer & Co-founder</p>
+                            </div>
+                        </div>
 
-    <div class="demo-page text-center">
-    <h4>Layout 2</h4>
+                        <!-- team-member -->
+                        <div class="col-sm-4">
+                            <div class="team-member animated fadeInDown wow" data-wow-delay=".5s">
+                                <img src="images/team/team-3.jpg" alt="team-member" class="img-responsive img-circle">
+                                <h4>Eilean Dover</h4>
+                                <p class="text-muted">UI/UX Designer</p>
+                            </div>
+                        </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 m-b-t-25">
-          <a href="index_pro_dark.html" target="_blank" class="demo-item">
-            <img src="images/demo/5.png" class="img-responsive img-thumbnail">
-          </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
+    <!-- END TEAM -->
 
-        <div class="col-md-4 col-sm-6 m-b-t-25">
-          <a href="index_pro.html" target="_blank" class="demo-item">
-            <img src="images/demo/6.png" class="img-responsive img-thumbnail">
-          </a>
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="title-box">
+                        <p class="title-alt">Faq</p>
+                        <h3 class="fadeIn animated wow text-white" data-wow-delay=".1s">Simple Questions</h3>
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row m-t-30">
+                <div class="col-md-5 col-md-offset-1">
+                    <!-- Question/Answer -->
+                    <div class="animated fadeInLeft wow" data-wow-delay=".1s">
+                        <div class="question-q-box">Q.</div>
+                        <h4 class="question text-white" data-wow-delay=".1s">What is Lorem Ipsum?</h4>
+                        <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <!-- Question/Answer -->
+                    <div class="animated fadeInLeft wow" data-wow-delay=".3s">
+                        <div class="question-q-box">Q.</div>
+                        <h4 class="question text-white">Why use Lorem Ipsum?</h4>
+                        <p class="answer">Lorem ipsum dolor sit amet, in mea nonumes dissentias dissentiunt, pro te solet oratio iriure. Cu sit consetetur moderatius intellegam, ius decore accusamus te. Ne primis suavitate disputando nam. Mutat convenirete.</p>
+                    </div>
+                    <!-- Question/Answer -->
+                    <div class="animated fadeInLeft wow" data-wow-delay=".5s">
+                        <div class="question-q-box">Q.</div>
+                        <h4 class="question text-white">How many variations exist?</h4>
+                        <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+
+                </div>
+                <!--/col-md-5 -->
+                <div class="col-md-5">
+                    <!-- Question/Answer -->
+                    <div class="animated fadeInRight wow" data-wow-delay=".2s">
+                        <div class="question-q-box">Q.</div>
+                        <h4 class="question text-white">Is safe use Lorem Ipsum?</h4>
+                        <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <!-- Question/Answer -->
+                    <div class="animated fadeInRight wow" data-wow-delay=".4s">
+                        <div class="question-q-box">Q.</div>
+                        <h4 class="question text-white">When can be used?</h4>
+                        <p class="answer">Lorem ipsum dolor sit amet, in mea nonumes dissentias dissentiunt, pro te solet oratio iriure. Cu sit consetetur moderatius intellegam, ius decore accusamus te. Ne primis suavitate disputando nam. Mutat convenirete.</p>
+                    </div>
+                    <!-- Question/Answer -->
+                    <div class="animated fadeInRight wow" data-wow-delay=".6s">
+                        <div class="question-q-box">Q.</div>
+                        <h4 class="question text-white">License &amp; Copyright</h4>
+                        <p class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+                <!--/col-md-5-->
+            </div>
         </div>
+    </section>
+    <!-- END FAQ -->
 
-        <div class="col-md-4 col-sm-6 m-b-t-25">
-          <a href="index_pro_img.html" target="_blank" class="demo-item">
-            <img src="images/demo/7.png" class="img-responsive img-thumbnail">
-          </a>
+    <!-- FOOTER -->
+    <footer class="section bg-gray footer footer-sm" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-center">
+                        <a class="navbar-brand logo">
+                            <span class="">Contact Us</span>
+                        </a>
+                        <address class="contact-address">
+                          795 Folsom Ave, Suite 600<br>
+                          San Francisco, CA 94107<br>
+                          <abbr title="Phone">P:</abbr> (123) 456-7890<br/>
+                          E: <a href="mailto:lugada@lugada.com">email@email.com</a>
+                        </address>
+                        <ul class="list-inline social-circle m-t-0">
+                            <li>
+                                <a href="#features"> <i class="zmdi zmdi-facebook"></i> </a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="zmdi zmdi-twitter"></i> </a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="zmdi zmdi-google-plus"></i> </a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="zmdi zmdi-apple"></i> </a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="zmdi zmdi-instagram"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted m-b-0" style="text-align:center"> © Out Of Axis 2016- All Right Reserved</p>
+                </div>
+            </div>
         </div>
+    </footer>
+    <!-- END FOOTER -->
 
-        <div class="col-md-4 col-sm-6 col-md-offset-4">
-          <div class=" m-b-t-25">
-          <a href="index_pro_gradient.html" target="_blank" class="demo-item">
-            <img src="images/demo/8.png" class="img-responsive img-thumbnail">
-          </a>
-        </div>
-        </div>
-
-      </div>
-
-      </div>
-    </div>
-
-
-  <div class="bottom-footer text-center">
-    <p class="m-b-0 text-muted">© Coderthemes 2016 - All Right Reserved</p>
-  </div>
-
-
-
-  <!-- Back to top -->
-  <a href="#" class="back-to-top"> <i class="zmdi zmdi-chevron-up"> </i> </a>
-
-
-
+    <!-- Back to top -->
+    <a href="#" class="back-to-top"> <i class="zmdi zmdi-chevron-up"> </i> </a>
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Jquery easing -->                                                      
+    <!-- Jquery easing -->
     <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
     <script src="js/wow.min.js"></script>
-
     <!--sticky header-->
     <script type="text/javascript" src="js/jquery.sticky.js"></script>
-        
     <!--common script for all pages-->
     <script src="js/jquery.app.js"></script>
-    
-  </body>
+    <script src="js/switcher.js"></script>
+</body>
+
 </html>
