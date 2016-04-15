@@ -437,7 +437,7 @@ address {
 
 .navbar-custom .navbar-nav li a {
   color: #858585;
-  font-size: 15px;
+  font-size: 14px;
   margin: 5px 0px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -461,7 +461,7 @@ address {
   font-size: 22px;
   color: #374760 !important;
   letter-spacing: 1px;
-  padding-top: 12px;
+  padding-top: 0;
   /* font-family: 'Montserrat', sans-serif; */
 }
 
@@ -536,6 +536,10 @@ address {
   display: block;
 }
 
+
+
+
+
 .service-item .service-detail p {
   color: #9aa7af;
   line-height: 24px;
@@ -570,6 +574,7 @@ address {
 .pricing-column .inner-box {
   position: relative;
   max-width: 300px;
+  height: 350px;
   margin: 0px auto;
   background-color: #fafafa;
   padding: 0px 0px 45px;
@@ -579,7 +584,7 @@ address {
 
 .pricing-column .plan-header {
   position: relative;
-  padding: 30px 20px 25px;
+  padding: 20px 20px 5px;
 }
 
 .pricing-column .plan-title {
@@ -604,7 +609,9 @@ address {
 
 .pricing-column .plan-stats {
   position: relative;
-  padding: 30px 20px 15px;
+  height: 200px;
+  padding: 0px 8px 25px;
+  margin-bottom: 30px;
 }
 
 .pricing-column .plan-stats li {
@@ -836,11 +843,24 @@ address {
 .form-control {
   box-shadow: none !important;
   outline: none !important;
-  border: 2px solid #cecece;
-  height: 38px;
+  border: 1px solid #E0E0E0;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 2px;
 }
 .form-control:hover ,.form-control:focus{
   border-color: #97a0af;
+}
+
+.join-us-input {
+  height: 40px;
+  font-size: 13px;
+  border-width:0px;
+  background: rgba(255, 255, 255, 1);
+  box-sizing:border-box;
+}
+.join-us-button {
+  border-width: 1px;
 }
 
 
@@ -1070,6 +1090,7 @@ address {
 	.nav-custom-left {
 		margin-left: 5%;
 	}
+
   .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1103,11 +1124,17 @@ address {
     width: 50%;
   }
   .navbar-custom .navbar-nav li a {
-    font-size: 12px;
+    font-size: 11px;
   }
   .blog-detail-box {
   padding-right: 0px;
-}
+  }
+  .navbar-nav {
+    margin-left:0;
+  }
+  .navbar-nav > li {
+    margin: 0 -7px;
+  }
 }
 @media only screen and (min-width: 767px) and (max-width: 991px){
 
@@ -1121,7 +1148,8 @@ address {
   }
   .blog-detail-box {
   padding-right: 0px;
-}
+  }
+
 }
 
 #style-switcher,
@@ -1250,4 +1278,155 @@ ul.pattern .color10 {
 
 .social-circle {
   margin-top: 20px;
+}
+
+
+/* my styles */
+.service-border {
+  width: 100px;
+  margin: 0 auto;
+  height: 5px;
+  background: #00B09C;
+  border-radius: 4px;
+}
+
+.quote-section {
+  padding-top: 40px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #we-are-reactive {
+    display: none;
+  }
+}
+
+.collapse-btn {
+  width: 200px;
+  height: 53px;
+  border-radius: 2em;
+  font-size: 19px;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+
+.inputfile {
+     width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     overflow: hidden;
+     display: none;
+     position: absolute;
+     z-index: -1;
+ }
+
+ .js .inputfile {
+     width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     overflow: hidden;
+     position: absolute;
+     z-index: -1;
+ }
+
+ .inputfile + label {
+     max-width: 80%;
+     font-size: 1.25rem;
+     /* 20px */
+     font-weight: 700;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     cursor: pointer;
+     display: inline-block;
+     overflow: hidden;
+     padding: 0.3rem 1.25rem;
+     /* 10px 20px */
+ }
+
+ .no-js .inputfile + label {
+     display: none;
+ }
+
+ .inputfile:focus + label,
+ .inputfile.has-focus + label {
+     outline: 1px dotted #000;
+     outline: -webkit-focus-ring-color auto 5px;
+ }
+
+ .inputfile + label svg {
+     width: 1em;
+     height: 1em;
+     vertical-align: middle;
+     fill: currentColor;
+     margin-top: -0.25em;
+     /* 4px */
+     margin-right: 0.25em;
+     /* 4px */
+ }
+
+ /* style 2 */
+
+ .inputfile-2 + label {
+   color: #df5b6c;
+   border: 1px solid currentColor;
+ }
+
+.inputfile-2:focus + label,
+.inputfile-2.has-focus + label,
+.inputfile-2 + label:hover {
+   color: #de5b8e;
+}
+
+.title-box a:hover, .title-box a:focus {
+  color: #00B19D;
+}
+
+#testi-carousel img {
+  width: 160px;
+  height: 110px;
+}
+
+#testi-carousel p {
+  margin:0 40px;
+}
+
+#logo-layer{
+  overflow:visible;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.st0 {
+    display: none;
+    fill: #FFFFFF;
+    overflow: auto;
+}
+.st1 {
+    fill: #00BEC2;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.st2 {
+    fill: none;
+    stroke: #00BEC2;
+    stroke-width: 5;
+    stroke-miterlimit: 10;
+
+
+}
+.st3 {
+    fill: #00BEC2;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.arrows {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
