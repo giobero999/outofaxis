@@ -438,7 +438,7 @@ address {
 .navbar-custom .navbar-nav li a {
   color: #858585;
   font-size: 14px;
-  margin: 5px 0px;
+  margin: 5px -2px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -584,7 +584,7 @@ address {
 
 .pricing-column .plan-header {
   position: relative;
-  padding: 20px 20px 5px;
+  padding: 10px 20px 5px;
 }
 
 .pricing-column .plan-title {
@@ -611,7 +611,7 @@ address {
   position: relative;
   height: 200px;
   padding: 0px 8px 25px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .pricing-column .plan-stats li {
@@ -636,7 +636,7 @@ address {
 /*======= Clients =======*/
 
 .clients {
-  border-top: 1px solid #ededed;
+  border-top: 0px solid #ededed;
 }
 
 .clients img:hover {
@@ -701,27 +701,35 @@ address {
 /*======= FAQ ======*/
 
 .question-q-box {
-  height: 30px;
-  width: 30px;
-  font-family: 'Montserrat', sans-serif;
+  height: 70px;
+  width: 70px;
   color: #ffffff;
   text-align: center;
-  border-radius: 3px;
-  float: left;
-  line-height: 30px;
+  border-radius: 50%;
+  line-height: 91px;
+  margin:0 auto;
+}
+.question-icon {
+  font-size: 30px;
+}
+
+.flash {
+  transform: rotate(20deg);
+  -webkit-transform:rotate(20deg);
 }
 
 .question {
-  margin-top: 0px;
-  margin-left: 40px;
+  margin: 12px 0;
   font-weight: 400;
   font-size: 16px;
+  color:#4c5667;
+  text-align: center;
 }
 
 .answer {
-  margin-left: 40px;
   color: #9aa7af;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 
@@ -1136,8 +1144,10 @@ address {
     margin: 0 -7px;
   }
 }
-@media only screen and (min-width: 767px) and (max-width: 991px){
-
+@media only screen and (min-width: 991px) and (max-width:1200px){
+  .navbar-custom .navbar-nav li a {
+    font-size: 13px;
+  }
 }
 @media (max-width: 767px) {
   .blog-wrapper .blog-item {
@@ -1291,7 +1301,7 @@ ul.pattern .color10 {
 }
 
 .quote-section {
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 
@@ -1389,7 +1399,7 @@ ul.pattern .color10 {
 }
 
 #testi-carousel p {
-  margin:0 40px;
+  margin:0 100px;
 }
 
 #logo-layer{
@@ -1404,20 +1414,20 @@ ul.pattern .color10 {
     overflow: auto;
 }
 .st1 {
-    fill: #00BEC2;
+    fill: #00B19D;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 .st2 {
     fill: none;
-    stroke: #00BEC2;
-    stroke-width: 5;
+    stroke: #00B19D;
+    stroke-width: 10;
     stroke-miterlimit: 10;
 
 
 }
 .st3 {
-    fill: #00BEC2;
+    fill: #00B19D;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
@@ -1429,4 +1439,11 @@ ul.pattern .color10 {
   -moz-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+}
+
+.logo-title {
+  float: right;
+  margin-top: 18px;
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s;
 }
